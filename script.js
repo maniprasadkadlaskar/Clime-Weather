@@ -55,7 +55,7 @@ const getData = () => {
 
 // To make GET request 
 const fetchData = async (para) => {
-    const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?${para}&APPID=${API_KEY}`);
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?${para}&APPID=${API_KEY}`);
     const data = await res.json();
     layoutData(data);
 }
