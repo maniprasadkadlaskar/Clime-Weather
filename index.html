@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clime Weather</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- page-navbar  -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/">
+                <span>Clime Weather</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-container bg-img text-center">
+        <div class="sub-container display-inline">
+            <form method="GET" class="display-inline">
+                <div>
+                    <input name="city" type="text" placeholder="Enter Your City">
+                </div>
+                <div>
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
+            <div>
+                <button onclick="getLocation()" class="normal-btn"><i class="bi bi-geo-alt"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- loader -->
+    <div class="loading">
+        <div class="content"><span>loading...</span></div>
+    </div>
+
+    <div class="container">
+        <div class="content-block text-bold">
+            <div>
+                <span>Humidity</span>
+            </div>
+            <div>
+                <span>Pressure</span>
+            </div>
+            <div>
+                <span>Max Temperature</span>
+            </div>
+            <div>
+                <span>Min Temperature</span>
+            </div>
+            <div>
+                <span>Wind Speed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- page-footer  -->
+    <footer>
+        <div class="text-header">
+            <span>Clime Weather</span>
+        </div>
+        <div>
+            <span>Clime Weather is a web application to checkout current weather updates of your city.
+                This application uses openweathermap API to fetch the data.
+                This web application is designed and developed by Maniprasad Kadlaskar.</span>
+        </div>
+        <div class="text-header">
+            <span>Find me</span>
+        </div>
+        <div class="text-block">
+            <span><a href="https://www.linkedin.com/in/maniprasad-kadlaskar-81368b1b5/"><i class="bi bi-linkedin"></i></a></span>
+            <span><a href="https://twitter.com/ManiprasadKadl1"><i class="bi bi-twitter"></i></a></span>
+            <span><a href="https://www.instagram.com/maniprasad_kadlaskar/"><i class="bi bi-instagram"></i></a></span>
+        </div>
+        <div>
+            <span>Copyright &copy; 2023 Clime Weather - All Rights Reserve</span>
+        </div>
+    </footer>
+</body>
+<script src="config.js"/></script>
+<script src="script.js"/></script>
+
+</html>
